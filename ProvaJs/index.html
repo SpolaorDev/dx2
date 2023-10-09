@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProvaJavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="javaScript.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="javaScript.png">
+    <script src="main.js"></script>
+</head>
+<body onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
+    <!--barra de navegação-->
+    <nav class="navbar glass" style="height: 70px;">
+        <span><a href="#home" style="display:flex; align-items: center;"><img class="img2" src="javaScript.png" width="40"
+            style="margin: -25px -10px -25px -20px"><h1 class="logo">&nbsp;Prova</h1></a></span>
+        <ul class="nav-links">
+            <li><a href="#home" id="pri" class="active cir_border">Home</a></li>
+            <li><a href="#Desafio1"  id="sec" class="cir_border">Tira-Teima</a></li>
+            <li><a href="#Desafio2" id="tri" class="cir_border">Vice-Líder</a></li>
+            <li><a href="#Desafio3" id="quad" class="cir_border">Zerinho</a></li>
+            <li><a href="#Desafio4" id="fi" class="cir_border">View</a></li>
+            <li><a href="#integrantes" id="hex" class="cir_border">Integrantes</a></li>
+            <li><div>
+                <input type="checkbox" class="checkbox dark" id="checkbox">
+              <label for="checkbox" class="label">
+                <i class="fa fa-moon-o"></i>
+                <i class='fa fa-sun-o'></i>
+                <div class='ball'>
+              </label>
+            </div></li>
+        </ul>
+        <img src="menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <!--barra de navegação-->
+
+    <header id="home">
+        <div class="header-content">
+            <h2  id="quote">Desafio: Op. Lógicos, Op. Relacionais, Estrutura If</h2>
+            <div class="line"></div>
+            <h1 >Prova De javaScript </h1>
+            
+        </div>
+        </div>
+    </header>
+
+    <!--Benefícios-->
+    <section class="NossaHistory" id="Desafio1">
+        <div class="container">
+            <div class="title">
+                <a href="Tirateima.html" class="ctn" onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'>Tira-Teima</a>
+    </div>
+    </section>
+    <!--benefícios-->
+
+    <!--Desafio1-->
+    <section class="NossaHistory" id="Desafio2">
+        <div class="container">
+            <div class="title">
+                <a href="vice.html" class="ctn" onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'>Vice-Líder</a>
+        </div>
+    </section>
+    <!--Desafio1-->
+
+     <!--Desafio5-->
+     <section class="NossaHistory" id="Desafio3">
+        <div class="container">
+            <div class="title">
+                <a href="Melhor.html" class="ctn" onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'>Melhor Aluno</a>
+
+    <!--Desafio5-->
+
+    <!--Desafio 3-->
+    <section class="NossaHistory" id="Desafio3">
+        <div class="container">
+            <div class="title">
+                <a href="zero.html" class="ctn" onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'>Zerinho ou Um</a>
+    <!--Desafio4-->
+    <section class="NossaHistory" id="Desafio4"></section>
+    <h1>Descubra que música possui mais views</h1>
+    <input id="quant" placeholder="quantidade de musicas">
+    <button onclick="quant()">Pronto</button>
+    <p id="musgas"></p>
+    <p id="resultado"></p>
+    <!--Desafio4-->
+
+    <!--Desafio5-->
+    <section class="NossaHistory" id="Desafio3">
+        <div class="container">
+            <div class="title">
+    <!--Desafio5-->
+
+
+    <section class="NossaHistory" id="integrantes">
+        <div class="container">
+            <div class="title">
+            <h1>Integrantes:</h1>
+            <div class="row">
+                <article class="card col">
+                    <img class="card-img" height="350" width="350" src="mano muito eu.jpg">
+                    <h4 class="dark">Isabella </h4>
+                    <a href="#" class="ctn">Mais Detalhes</a>
+                </article>
+                <article class="card col">
+                    <img height="350" width="350" src="Daniel.png">
+                    <h4 class="dark">Daniel</h4>
+                    <a href="#" class="ctn">Mais Detalhes</a>
+                </article>
+                <article class="card col">
+                    <img height="350" width="350" src="Samuel.png">
+                    <h4 class="dark">Samuel</h4>
+                    <a href="#" class="ctn">Mais Detalhes</a>
+                </article>
+                <article class="card col">
+                    <img height="350" width="350" src="rato.png">
+                    <h4 class="dark">Spolaor</h4>
+                    <a href="#" class="ctn">Mais Detalhes</a>
+                </article>
+            </div>
+
+    <i class="fa fa-chevron-up" onclick="topFunction()" id="upbtn"></i>
+    <section class="rodape">
+        <div class="social">
+           
+        </div>
+    </section>
+    
+    <!--rodapé-->
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+
+  
+
+
+</body>
+</html>
